@@ -10,7 +10,7 @@ uploaded_file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
     # Open the image with PIL
-    image = Image.open(uploaded_file)
+    image = Image.open(uploaded_file).convert('RGB')
     
     # Show the original
     st.write("### Original Image")
@@ -52,4 +52,5 @@ if uploaded_file is not None:
         file_name="edge_detected_image.png",
         mime="image/png"
     )
+
 
