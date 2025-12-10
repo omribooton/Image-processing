@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-from scikit-image import filters, color, util
+from skimage import filters, color, util
 
 st.title("skimage_filter_app")
 
