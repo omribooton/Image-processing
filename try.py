@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-from skimage import filters, color, util
+from scikit-image import filters, color, util
 
 st.title("skimage_filter_app")
 
@@ -52,3 +52,4 @@ if uploaded_file is not None:
         file_name="edge_detected_image.png",
         mime="image/png"
     )
+
